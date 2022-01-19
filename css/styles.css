@@ -72,13 +72,39 @@ transition: background-color 0.5s, color 0.5s;
 .thickLeftPad{padding-left: 60px;}
 .resetPad{padding:0px;}
 .left{text-align: left; }
-.foreground{background-color: #00507A;}
+.resetMargin{margin: 0px;}
+.thinMargin{margin: 5px;}
+.normMargin{margin: 15px;}
+.thickMargin{margin: 25px;}
+.vertPad{padding-top: 35px; padding-bottom: 35px;}
+.fground{background-color: #00507A;}
+.fground2{background-color: rgb(28, 48, 61);}
+.leftBorder{
+  border-left-style: solid; 
+  border-width: 5px; 
+  border-color: cornflowerblue;
+ text-align: left;
+padding-left: 10px;}
 img.repeat
 {
     width: 100%;
-    height: 200px;
+    height: auto;
   background-repeat: repeat;
   background-size: cover;
+}
+#WPTitle{
+  font-family: Play, Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: #bdbdbd -1100px 0px 0px, #c0c0c0 -880px 0px 0px, #a1a1a1 -660px 0px 0px, #919191 -440px 0px 0px,#8f8f8f -220px 0px 0px, 
+  #797979 220px 0px 0px, #707070 440px 0px 0px, #666666 660px 0px 0px, #585858 880px 0px 0px, #505050 1100px 0px 0px;
+  background: linear-gradient(to left, #b4f501, #ff0000);
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  left: 0%;
+  right: 0%;
+  position: relative;
 }
 #footer
 {
@@ -87,20 +113,83 @@ img.repeat
     padding-right: 12px;
     margin-left: 0;
     margin-right: 0;
-    height: 90px;
-    box-sizing: border-box;
-    
-    -webkit-text-size-adjust: 100%;
+    margin-top: 20px;
+    height: 200px;
     
     
-    background-color: #134f88;
+    
+    
+    background-color: rgb(54, 54, 54);
 }
-
+.imgcaption {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+  background-color: #000000A0;
+  padding: 8px;
+  font-size: 10px;
+}
+.rel{position: relative;}
+.FR{float: left; }
+.FR{float: right; }
+#House img{
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 5px;
+  border-color:black;
+  opacity: 1;
+  filter: sepia(1) brightness(1);
+  transition: filter 0.5s;
+}
+.halfwide{width:50%;}
+#House:hover img{
+  filter:sepia(0) brightness(0.6);
+}
+#House p{
+  opacity: 0;
+  transition-delay: 0.5s;
+  transition: opacity 1s;
+}
+#House:hover p{
+  opacity: 1;
+}
+#House
+#nothingToSee
+{
+  font-family:"Permanent Marker"
+}
+#WPImages
+{
+  position: relative;
+  width: 50%;
+  height: 400px;
+}
+#WPImages *
+{
+  position: absolute;
+  right: 2px;
+  width:100%;
+  max-height: auto;
+}
+button
+{
+padding: 10px;
+background-color: limegreen;
+border-style: none;
+border-radius: 5px;
+font-size: 25px;
+}
 
 h1{font-size: 60px;}
 h2{font-size: 55px; }
 h3{font-size: 45px; border-bottom-style:inset; border-width: 5px;}
 h4{font-size: 30px;}
-p{font-size: 20px}
+.tiny{font-size: 10px;}
+p{font-size: 20px; margin: 0px;}
+p.largetxt{font-size: 25px;}
 .quote{font-size: 40px; color: #FFFFFFA0; font-style: italic; font-family: 'Times New Roman', Times, serif;}
 * {font-family: Arial, Helvetica, sans-serif; text-align: center; color: white;}
